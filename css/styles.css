@@ -1,0 +1,88 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+.navbar{
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: rgb(29, 28, 28);
+    width: 100%;
+    height: 15%;
+    z-index: 1;
+    
+}
+.nav{
+    display: flex;
+    justify-content: right;
+    list-style: none;
+    margin-right: 15%;
+    color: white;
+
+}
+.logo{
+    flex: 1 1 auto;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: bold;
+    font-size: 35px;
+    color: white;
+}
+a{
+    margin: 15px;
+    color: #000;
+    text-decoration: none;
+    text-transform: uppercase;
+
+}
+li a{
+    color: white;
+    font-size: 20px;
+}
+li a:hover{
+    color: rgb(233, 192, 145);
+}
+.home-area{
+    position: relative;
+    background-image: url(../images/amey-meher-CO0rIoWjvzo-unsplash.jpg);
+    width: 100%;
+    height: 100vh;
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+}
+.about-area, .destination-area, .contact-area{
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 100%;
+    height: 700px;
+    
+}
+.text-part{
+    width: 65%;
+    height: 80%;
+}
+h1{
+    padding-top: 25px;
+    font-size: 50px;
+}
+p{
+    font-size: 25px;
+    line-height: 40px;
+}
+html{
+    scroll-behavior: smooth;
+}
+img{
+    width: 80px;
+    border-radius: 100px;
+    margin-left: 3%;
+   
+}
