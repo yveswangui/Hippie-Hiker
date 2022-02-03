@@ -51,10 +51,12 @@ li a:hover{
     -webkit-background-size: cover;
     background-size: cover;
 }
-
+.destination-area, .info-area, .contact-area{
+    padding-top: 70px;
+}
 .text-part{
-    width: 65%;
-    height: 80%;
+   align-items: center;
+
 }
 h1{
     padding-top: 40px;
@@ -64,6 +66,7 @@ h1{
 p{
     font-size: 25px;
     line-height: 40px;
+    text-align: center;
 }
 html{
     scroll-behavior: smooth;
@@ -104,12 +107,11 @@ h3{
     place-items: center;
     transition: 0.4s linear;
 }
-.card:hover{
-    opacity: 0.9;
-    box-shadow: 0px 2px 35px 2px rgba(0, 0, 0, 0.3);
-    
+.card.active{ 
+    box-shadow: 0px 2px 35px 2px rgba(0, 0, 0, 0.3);  
 }
-.card:hover .row-image {
+.card:hover .row-image{
+    opacity: 0.6;
     transform: scale(1.1);
     
 }
@@ -138,7 +140,7 @@ h3{
     line-height: 1.8em;
 }
 .bottom button{
-    float: left;
+    align-items: center;
     padding-left: 7px 15px;
     font-size: 17px;
     background: #e74c3c;
@@ -152,4 +154,11 @@ h3{
 .bottom button:hover{
     transform: scale(0.9);
     background: #e64533;
+}
+.bottom{
+    display: none;
+}
+.content p{
+    text-align: center;
+    font: 25px;
 }
