@@ -87,6 +87,7 @@ h3::after{
 }
 .text-part{
    align-items: center;
+   justify-content: center;
 
 }
 h1{
@@ -128,11 +129,7 @@ h1{
         width: 21%;
     }
 }
-p{
-    font-size: 25px;
-    line-height: 40px;
-    text-align: center;
-}
+
 html{
     scroll-behavior: smooth;
 }
@@ -214,6 +211,7 @@ h3{
     border: none;
     margin: 10px 0;
     cursor: pointer;
+    border-radius: 5px;
     transition: 0.3s ease;
 }
 .bottom button:hover{
@@ -229,4 +227,130 @@ h3{
 }
 .beginner-card2{
     float: right;
+}
+p{
+    font-size: 25px;
+    line-height: 40px;
+    text-align: center;
+}
+.contact-us{
+    min-height: 100vh;
+    background: url(../images/dariusz-sankowski-3OiYMgDKJ6k-unsplash.jpg);
+    background-size: cover;
+    justify-content: center;
+    align-items: center;
+
+}
+.contact-us{
+    padding-top: 100px;
+}
+.contact-info{
+    color: #f8f2f2;
+    padding-left: 50px;
+    line-height: 75px;
+    font: 10px;
+}
+.contact-info i{
+    margin-right: 20px;
+    font-size: 25px;
+    
+}
+.contact-form{
+    max-width: 700px;
+    
+}
+h4{
+    color: white;
+    text-align: center;
+    font-size: 30px;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+.contact-form .text-box{
+    background: #000;
+    color: #fff;
+    border: none;
+    width: calc(50% -10px);
+    height: 50px;
+    padding: 10px;
+    font-size: 15px;
+    border-radius: 5px;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    opacity: 0.9;
+    margin-right: 10px;
+}
+.contact-form .text-box:first-child{
+    margin-right: 15px;
+
+}
+.contact-form textarea{
+    background: #000;
+    color: #fff;
+    border: none;
+    width: 100%;
+    padding: 12px;
+    min-height: 200px;
+    max-height: 400px;
+    resize: vertical;
+    border-radius: 5px;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    opacity: 0.9;
+}
+.contact-form .send-btn{
+    float: right;
+    background: #FF5733 ;
+    color: #fff;
+    border: none;
+    width: 120px;
+    height: 40px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border-radius: 5px;
+    transition: 0.3s;
+    transition-property: background;
+
+}
+.contact-form .send-btn:hover{
+    background: #F39D56 ;
+}
+@media screen and(max-width:950px) {
+    contact-section{
+        flex-direction: column;
+    }
+    .contact-info .contact-form{
+        margin: 30px 50px;
+    }
+    .contact-form .text-box{
+        width: 100%;
+    }
+}
+.alert-success{
+    z-index: 1;
+    background: rgb(245, 118, 7);
+    font-size: 15px;
+    color: white;
+    padding:20px 20px;
+    min-width: 420px;
+    right: 0;
+    top: 10px;
+    border-left: 18px solid sandybrown;
+    border-radius: 4px;
+   
+    
+}
+.alert-error{
+    z-index: 1;
+    background: rgb(211, 55, 8);
+    font-size: 15px;
+    color: white;
+    padding:20px 20px;
+    min-width: 420px;
+    right: 0;
+    top: 10px;
+    border-left: 18px solid rgb(211, 78, 54);
+    border-radius: 4px;
+   
+    
 }
