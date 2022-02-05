@@ -35,6 +35,37 @@ body{
     font-size: 35px;
     color: white;
 }
+label #my-btn,
+label #cancel{
+    color: white;
+    font-size: 30px;
+    float: right;
+    line-height: 80px;
+    cursor: pointer;
+    display: none;
+}
+#check{
+    display: none;
+}
+@media(max-width: 600px){
+    .navbar img{
+        left: 8%;
+        width: 50px;
+
+    }
+    .nav li a{
+        font-size: 17px;
+        color: white;
+    }
+}
+@media(max-width: 600px){
+    label #my-btn{
+        display: block;
+    }
+    .nav li a{
+        font-size: 17px;
+    }
+}
 a{
     margin: 15px;
     color: #000;
@@ -213,6 +244,13 @@ h3{
     font-weight: 500;
     color: #e74c3c;
 }
+@media screen and (max-width: 1000px){
+    .card{
+        width: 70%;
+        margin-left: 20%;
+        margin-bottom: 30px;
+    }
+}
 .bottom p{
     color: #666666;
     font-size: 16px;
@@ -291,7 +329,7 @@ h4{
     width: calc(50% -10px);
     height: 50px;
     padding: 10px;
-    font-size: 15px;
+    font-size: 20px;
     border-radius: 5px;
     box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
     margin-bottom: 20px;
@@ -346,32 +384,9 @@ padding-top: 100px;
     .contact-form .text-box{
         width: 100%;
     }
-}
-.alert-success{
-    z-index: 1;
-    background: rgb(245, 118, 7);
-    font-size: 15px;
-    color: white;
-    padding:20px 20px;
-    min-width: 420px;
-    right: 0;
-    top: 10px;
-    border-left: 18px solid sandybrown;
-    border-radius: 4px;
-   
-    
-}
-.alert-error{
-    z-index: 1;
-    background: rgb(211, 55, 8);
-    font-size: 15px;
-    color: white;
-    padding:20px 20px;
-    min-width: 420px;
-    right: 0;
-    top: 10px;
-    border-left: 18px solid rgb(211, 78, 54);
-    border-radius: 4px; 
+    .section{
+        margin-top: 100px;
+    }
 }
 .water{
     position: relative;

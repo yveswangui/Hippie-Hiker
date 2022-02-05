@@ -10,14 +10,22 @@
     <link href="https://fonts.googleapis.com/css2?family=Dosis&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="sweetalert2.min.css">
     <link rel="stylesheet" href="css/styles.css" type="text/css">
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="sweetalert2.min.js"></script>
     <script src="js/scripts.js"></script>
     <title>Hippy Hiker</title>
 </head>
 <body>
     <div class="navbar">
+        <input type="checkbox" id="check">
+        <label for="check">
+            <i class="fa fa-bars" aria-hidden="true" id="my-btn"></i>
+            <i class="fa fa-bars" aria-hidden="true" id="cancel"></i>
+        </label>
         <img src="https://i.pinimg.com/originals/85/95/15/85951588dc81d2506685f3d7fe4be925.png" alt="">
         <h2 class="logo">HIPPY HIKER </h2> 
         <ul class="nav">
@@ -155,9 +163,6 @@
                     <li class="item5"><div class="bg"></div><span class="essentials">First Aid Kit</span></li>
                 </ul>
             </div>
-
-
-
         </div>
     </div> 
     <div class="contact-area" id="contacts">
@@ -182,18 +187,12 @@
                         </div>
                         <div class="col-md-6">
                             <h4>Let's hear your thoughts...</h4>
-                            <!--<div class="alert-success">
-                                <span>Message received successfully. Thank you for the feedback!</span>
-                            </div>-->
-                            <!--<div class="alert-error">
-                                <span>Ooops! Something went wrong</span>
-                            </div>-->
-                                <div class="contact-form">
+                                <div class="contact-form" id="form">
                                     <form action="" class="contact" method="post">
-                                        <input type="text" name="name" class="text-box" placeholder="Your Name" required>
-                                        <input type="email" name="email" class="text-box"placeholder="Your Email" required>
-                                        <textarea name="message"  cols="30" rows="8" placeholder="Your Message"></textarea>
-                                        <input type="submit" name="submit" class="send-btn" value="Send">
+                                        <input type="text" name="name" class="text-box" id="username" placeholder="Your Name" required>
+                                        <input type="email" name="email" class="text-box" id= "useremail" placeholder="Your Email" required>
+                                        <textarea name="message"  cols="30" rows="8" placeholder="Message..."></textarea>
+                                        <button onclick="validation();">Send</button>
                                     </form>
                                 </div>
                             </div>
