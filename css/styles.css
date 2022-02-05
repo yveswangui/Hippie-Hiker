@@ -296,6 +296,7 @@ p{
     justify-content: center;
     align-items: center;
     padding-bottom: 30px;
+    margin-bottom: 40px;
 
 }
 .contact-us{
@@ -354,7 +355,7 @@ h4{
     margin-bottom: 20px;
     opacity: 0.9;
 }
-.contact-form .send-btn{
+.contact-form button{
     float: right;
     background: #FF5733 ;
     color: #fff;
@@ -496,4 +497,14 @@ h1{
     font-size: 25px;
     transform: rotate(-45deg);
     font-weight: bold;
+}
+.copyright{
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: rgb(90, 9, 83);
+}
+.copyright i{
+    font-size: 25px;
 }
