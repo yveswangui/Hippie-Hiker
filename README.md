@@ -3,7 +3,7 @@
 ## Yvonne Wangui Wamburu
 
 ## Description
-This is a hiking website that entails a brief description on the available hiking trails, a guide on necessities required for a hike, a section where the contact information is provided and the user can leave a message.
+A hiking app that enables users to see the available hiking trails depending on each level, a section containing hiking necessities and a contact section where the user can see contact details and send a message.
 
 
 ## Installation / Setup instruction
@@ -23,7 +23,7 @@ This is a hiking website that entails a brief description on the available hikin
 * JavaScript
 
 ## Contact Information 
-Any suggestions feel free to send an email to yveswangui@gmail.com
+If you have any suggestions feel free to send an email at yveswangui@gmail.com
 
 ## License
 * *MIT License:*
