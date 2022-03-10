@@ -22,6 +22,9 @@ A hiking app that enables users to see the available hiking trails depending on 
 * Bootstrap
 * JavaScript
 
+## Known Bugs
+No known bugs at the moment
+
 ## Contact Information 
 If you have any suggestions feel free to send an email at yveswangui@gmail.com
 
